@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&family=Oswald:wght@200..700&family=Vazirmatn:wght@100..900&display=swap");
+
+:root {
+  --bg-primary: #03050e;
+  --bg-secondary: #080a14;
+  --bg-accent: #101530;
+  --bg-muted: #141414;
+  --foreground: #f7f7f7;
+  --muted-foreground: #7f8296;
+  --border-primary: #262626;
+  --border-secondary: #101530;
+  --gradient-1: linear-gradient(to top left, #00d435, #43f75b, #6ffc92);
+  --gradient-2: linear-gradient(to top left, #00d435, #ffb804, #6ffc92);
+  --primary: #00d60b;
+  --primary-accent: #43f752;
+  --warning: #ffb804;
+  transition: all 400ms ease;
+  --glow: radial-gradient(rgba(0, 36, 210, 0.3) 0%, rgba(3, 5, 14, 0.5));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+html,
+body {
+  color: var(--foreground);
+  min-height: 100vh;
+  background: var(--bg-primary);
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) transparent;
+  overflow: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  font-family: "Vazirmatn", sans-serif;
+}
