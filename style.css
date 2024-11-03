@@ -332,18 +332,15 @@ nav .cancel-btn {
   position: relative;
   max-width: 250px;
 }
-#hero svg {
-  max-width: 100%;
-}
 
-#hero svg .text {
+#hero .svg-img-offer {
   fill: var(--muted-foreground);
   font-size: 35px;
   font-weight: 700;
   font-variant-ligatures: none;
   letter-spacing: 5px;
   animation: rotate 25s linear infinite;
-  transform-origin: 250px 250px;
+  max-width: 100%;
 }
 
 @keyframes rotate {
@@ -396,5 +393,50 @@ nav .cancel-btn {
 
   #hero .buttons-wrapper {
     justify-content: center;
+  }
+}
+.social-handle-container {
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--glow);
+  padding: 20px 10px;
+  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px);
+  border-radius: 10px;
+  z-index: 90;
+}
+@media (max-width: 1250px) {
+  .social-handle-container {
+    display: none;
+  }
+}
+#about .container {
+  display: grid;
+  grid-template-columns: 400px auto;
+  gap: 30px;
+}
+
+#about .about-image {
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+#about .about-image:hover img {
+  transform: scale(1.2);
+}
+
+#about .buttons-wrapper {
+  margin-top: 30px;
+}
+
+@media (max-width: 850px) {
+  #about .container * {
+    text-align: center;
+  }
+  #about .container {
+    grid-template-columns: 100%;
   }
 }
