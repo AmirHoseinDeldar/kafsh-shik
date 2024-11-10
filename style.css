@@ -534,3 +534,162 @@ nav .cancel-btn {
     padding: 10px;
   }
 }
+
+#feedbacks .feedbacks-container {
+  margin-top: 60px;
+}
+
+#feedbacks .slick-track {
+  display: flex !important;
+  gap: 20px;
+}
+
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+
+#feedbacks .feed-block {
+  background: var(--bg-accent);
+  position: relative;
+  padding: 30px 20px;
+  border-radius: 10px;
+  border: solid 2px transparent;
+  transition: var(--transition);
+}
+
+#feedbacks .feed-block:hover {
+  border-color: var(--primary-accent);
+  background: var(--bg-secondary);
+}
+#feedbacks .profile {
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
+  border-radius: 100%;
+  margin: auto;
+  background: var(--bg-muted);
+  transition: var(--transition);
+}
+#feedbacks .profile:hover {
+  opacity: 0.5;
+}
+
+#feedbacks .details {
+  padding: 20px 0;
+  text-align: center;
+}
+
+#feedbacks .bottom {
+  text-align: center;
+}
+
+#feedbacks .stars-container {
+  color: var(--warning);
+}
+
+#feedbacks .name {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+#feedbacks .feed-block .muted {
+  font-size: 10px;
+}
+
+@media (max-width: 600px) {
+  #feedbacks .slick-track {
+    gap: 0;
+  }
+}
+#contact .contact-form {
+  background: var(--bg-accent);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+#contact .title {
+  font-size: 40px;
+}
+#contact .row {
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#contact .control {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  background: var(--bg-primary);
+  border-radius: 10px;
+  color: var(--foreground);
+  font-size: 15px;
+  overflow: hidden;
+  transition: var(--transition);
+  border: solid 2px var(--border-primary);
+}
+
+input {
+  height: 50px;
+}
+
+#contact .control:focus {
+  border-color: var(--primary);
+  background: var(--bg-secondary);
+}
+
+#contact .bottom {
+  margin-top: 40px;
+}
+
+#contact .btn {
+  display: block;
+  padding: 20px 30px;
+  width: 100%;
+  max-width: 300px;
+  color: #03050e;
+  font-weight: bolder;
+}
+
+@media (max-width: 600px) {
+  #contact .contact-form {
+    padding: 20px;
+  }
+
+  #contact .title {
+    font-size: 25px;
+    text-align: center;
+  }
+  #contact .muted {
+    text-align: center;
+  }
+}
+footer {
+  background: var(--bg-secondary);
+}
+
+footer .footer-tabs .tab {
+  color: var(--muted-foreground);
+  transition: var(--transition);
+}
+
+footer .footer-tabs .tab:hover {
+  color: var(--foreground);
+}
+
+footer .footer-handle-container {
+  margin-top: 20px;
+}
+
+footer .copyright {
+  flex-direction: column;
+  padding: 30px;
+  background: var(--bg-accent);
+}
+
+@media (max-width: 700px) {
+  footer .footer-tabs {
+    flex-direction: column;
+  }
+}
