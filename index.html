@@ -11,12 +11,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- navigation Start -->
@@ -38,7 +42,7 @@
         </a>
         <a href="#about" class="tab"><h4>درباره ما</h4></a>
         <a href="#products" class="tab"><h4>محصولات</h4></a>
-        <a href="#feedback" class="tab"><h4>نظرات</h4></a>
+        <a href="#feedbacks" class="tab"><h4>نظرات</h4></a>
         <a href="#contact" class="tab"> <h4>تماس با ما</h4></a>
       </div>
       <div class="column flex-center buttons-wrapper">
@@ -60,43 +64,16 @@
     <section id="hero" class="flex">
       <div class="container">
         <div class="column">
-          <h1 class="heading-1">
+          <h1 class="heading-1" data-aos="fade-left">
             کفش های <span class="stroke-text"> بی نظیر </span>
             <span class="gradient-text"> برای همه </span>
           </h1>
-          <p class="muted">
+          <p class="muted" data-aos="fade-left" data-aos-delay="100">
             با هر قدم، برتری و خاص بودن خود را با کفش‌های ما به نمایش بگذارید
             کفش‌هایی که فراتر از مد روز، استایلی خاص و چشم‌نواز به شما هدیه
             می‌کنند. در هر مکانی که هستید، با کفش‌های ما بدرخشید و خاص باشید.
           </p>
           <div class="discount-wrapper">
-            <!-- <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xml:lang="en"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              viewBox="0 0 500 500"
-              c
-            >
-              <defs>
-                <path
-                  id="textcircle"
-                  d="M250,400
-                             a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z"
-                  transform="rotate(12,250,250)"
-                />
-              </defs>
-              <g class="textcircle">
-                <text textLength="940" class="text">
-                  <textPath
-                    xlink:href="#textcircle"
-                    aria-label="Discount circle"
-                    textLength="940"
-                  >
-                    ما بهترین کفش هارو داریم
-                  </textPath>
-                </text>
-              </g>
-            </svg> -->
             <img src="./assets/svg.png" alt="" class="svg-img-offer" />
             <h1 class="discount">30% آفر</h1>
           </div>
@@ -106,8 +83,8 @@
           </div>
         </div>
         <div class="column hero-image">
-          <img src="/assets/hero-shoe.png" alt="" />
-          <div class="rating-group">
+          <img src="/assets/hero-shoe.png" alt="" data-aos="fade-right" />
+          <div class="rating-group" data-aos="fade-left" data-aos-delay="200">
             <div class="flex row">
               <h1>4.5</h1>
               <div class="flex-center stars-container">
@@ -141,13 +118,14 @@
       ></a>
     </aside>
     <!-- social Handles end -->
+
     <!-- about start -->
     <section id="about">
       <div class="container">
         <div class="column about-image">
-          <img src="./assets//shoe-1.jpeg" alt="" />
+          <img src="./assets//shoe-1.jpeg" alt="" data-aos="fade-right" />
         </div>
-        <div class="column">
+        <div class="column" data-aos="fade-left">
           <h2 class="sub-title">درباره ما</h2>
           <h1 class="heading-1 gradient-text">
             بالاترین کیفیت کفش اینجا پیدا کنید
@@ -184,7 +162,7 @@
           جزئیات <span class="gradient-text"> براق</span>
         </h1>
         <div class="products-container">
-          <div class="flex product">
+          <div class="flex product" data-aos="fade-left" data-aos-delay="100">
             <div class="top picture">
               <img src="./assets/shoe-2.jpeg" alt="" />
               <div class="flex-center btn share-btn">
@@ -212,7 +190,7 @@
               </a>
             </div>
           </div>
-          <div class="flex product">
+          <div class="flex product" data-aos="fade-left" data-aos-delay="200">
             <div class="top picture">
               <img src="./assets/shoe-3.jpeg" alt="" />
               <div class="flex-center btn share-btn">
@@ -240,7 +218,7 @@
               </a>
             </div>
           </div>
-          <div class="flex product">
+          <div class="flex product" data-aos="fade-left" data-aos-delay="300">
             <div class="top picture">
               <img src="./assets/shoe-4.jpeg" alt="" />
               <div class="flex-center btn share-btn">
@@ -268,7 +246,7 @@
               </a>
             </div>
           </div>
-          <div class="flex product">
+          <div class="flex product" data-aos="fade-right" data-aos-delay="100">
             <div class="top picture">
               <img src="./assets/shoe-5.jpeg" alt="" />
               <div class="flex-center btn share-btn">
@@ -296,7 +274,7 @@
               </a>
             </div>
           </div>
-          <div class="flex product">
+          <div class="flex product" data-aos="fade-right" data-aos-delay="200">
             <div class="top picture">
               <img src="./assets/shoe-6.jpeg" alt="" />
               <div class="flex-center btn share-btn">
@@ -324,7 +302,7 @@
               </a>
             </div>
           </div>
-          <div class="flex product">
+          <div class="flex product" data-aos="fade-right" data-aos-delay="300">
             <div class="top picture">
               <img src="./assets/shoe-7.jpeg" alt="" />
               <div class="flex-center btn share-btn">
@@ -352,7 +330,7 @@
               </a>
             </div>
           </div>
-          <div class="flex product">
+          <div class="flex product" data-aos="fade-left" data-aos-delay="100">
             <div class="top picture">
               <img src="./assets/shoe-8.jpeg" alt="" />
               <div class="flex-center btn share-btn">
@@ -380,7 +358,7 @@
               </a>
             </div>
           </div>
-          <div class="flex product">
+          <div class="flex product" data-aos="fade-left" data-aos-delay="200">
             <div class="top picture">
               <img src="./assets/shoe-9.jpeg" alt="" />
               <div class="flex-center btn share-btn">
@@ -414,7 +392,7 @@
     <!-- product end -->
 
     <!-- feedback start -->
-    <section id="feedbacks">
+    <section id="feedbacks" data-aos="fade-right" data-aos-delay="100">
       <div class="container">
         <h1 class="heading-1">
           نظرات <span class="gradient-text">مشتری</span>
@@ -611,7 +589,7 @@
     </section>
     <!-- contact end -->
     <!-- footer start -->
-    <footer>
+    <footer data-aos="fade-right" data-aos-delay="100">
       <div class="container">
         <div class="flex-center logo">
           <h1>کفش <span class="gradient-text">شیک</span></h1>
@@ -661,6 +639,7 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
 
     <script src="app.js"></script>
   </body>
